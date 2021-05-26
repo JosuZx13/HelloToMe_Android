@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ly_main"
+    tools:context=".ActivityMain">
+
+    <!-- La imagen que indique el nombre de la app -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logoHelloToMe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/imagetitle_hellotome"
+            android:contentDescription="@string/logo">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <!-- La caja de texto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/layout_margin_main"
+        android:layout_marginStart="@dimen/layout_margin_main"
+        android:layout_marginEnd="@dimen/layout_margin_main"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/border"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/texBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/textBox_hint"
+                android:autofillHints="@string/textBox_hint"
+                android:textSize="@dimen/textbox_font_size"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin_top_cleanTextBox"
+                android:textAlignment="gravity"
+                android:inputType="text|textMultiLine|textCapSentences" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="3.5">
+
+                <ImageView
+                    android:id="@+id/iv_in_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_top_flag"
+                    android:tag=""
+                    android:src="@drawable/flag_spanish"
+                    android:contentDescription="@string/in_flag" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textbox_font_size"
+                    android:text="@string/tv_in"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <Button
+                    android:id="@+id/bt_cleanText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_top_cleanTextBox"
+                    android:text="@string/bt_clean_text"/>
+
+                <Button
+                    android:id="@+id/bt_translateText"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_top_cleanTextBox"
+                    android:text="@string/bt_traduction_text"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5">
+
+                <ImageView
+                    android:id="@+id/iv_out_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/margin_top_flag"
+                    android:tag=""
+                    android:src="@drawable/flag_spanish"
+                    android:contentDescription="@string/out_flag" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/textbox_font_size"
+                    android:text="@string/tv_out"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- El lugar donde irán los botones -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.50"
+        android:background="@color/base_button"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:id="@+id/rl_button_place">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_voice_over"
+            android:backgroundTint="@color/buttoncolor"
+            android:contentDescription="@string/fb_text_leer"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_blackboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_brush"
+            android:backgroundTint="@color/buttoncolor"
+            android:contentDescription="@string/fb_text_pizarra" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_mic"
+            android:backgroundTint="@color/buttoncolor"
+            android:contentDescription="@string/fb_text_escuchar" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pdm.hellotome">
+
+    <!-- Para poder usar el reconocimiento de voz -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- Para poder usar el sensor de proximidad -->
+    <uses-feature android:name="android.hardware.sensor.proximity"/>
+
+    <!-- Para poder comprobar si existe una conexion a internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_hellotome"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_hellotome_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelloToMe">
+        <activity android:name=".ActivityMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".paint.ActivityPaint"
+            android:label="BLACKBOARD"/>
+
+        <activity android:name=".idiom.FragmentChangeLanguage"
+            android:theme="@style/FloatingStyleNotTouch"
+            android:label="IDIOMS"/>
+
+        <activity android:name=".ActivityExit"
+            android:label="EXIT"/>
+
+    </application>
+
+</manifest>

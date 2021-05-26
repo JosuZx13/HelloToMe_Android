@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">HelloToMe!</string>
+    <string name="app_cerrar">Salir de HelloToMe!</string>
+    <string name="cerrar_mensaje">¿Desea salir de la Aplicación?</string>
+    <string name="aceptar">Sí</string>
+    <string name="cancelar">No</string>
+
+    <string name="textBox_hint">Diga o escriba algo…</string>
+    <!-- Se guardan los idiomas disponibles -->
+    <string-array name="language_array">
+        <item>SPANISH</item>
+        <item>BRITISH</item>
+        <item>GERMAN</item>
+        <item>NORWAY</item>
+    </string-array>
+
+    <string name="not_internet_translation">No hay conexión a Internet</string>
+
+    <string name="fb_text_pizarra">Pizarra</string>
+    <string name="pencil_color_black">pencil_color_black</string>
+    <string name="pencil_color_red">pencil_color_red</string>
+    <string name="iv_descrip_rubber">rubber</string>
+    <string name="iv_descrip_pencil_color_blue">pencil_color_blue</string>
+
+    <string name="fb_text_escuchar">Escuchar lo que dice el usuario</string>
+    <string name="tx_escuchando">Escuchando…</string>
+    <string name="fb_text_leer">Leer lo que hay en la caja de texto</string>
+    <string name="bt_clean_text">Borrar</string>
+    <string name="bt_traduction_text">Traducir</string>
+    <string name="logo">Logo</string>
+    <string name="in_flag">in_flag</string>
+    <string name="out_flag">out_flag</string>
+    <string name="flag_option">flag_option</string>
+    <string name="tv_out">Salida</string>
+    <string name="tv_in">Entrada</string>
+
+</resources>

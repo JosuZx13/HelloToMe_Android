@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_flag">50dp</dimen>
+    <dimen name="margin_top_cleanTextBox">10dp</dimen>
+    <dimen name="margin_textBox">10dp</dimen>
+    <dimen name="magin_recyclerView">10dp</dimen>
+    <dimen name="corner_radius_cardview">20dp</dimen>
+    <dimen name="cardview_elevation">0dp</dimen>
+    <dimen name="layout_margin_main">25dp</dimen>
+
+    <dimen name="textbox_font_size">25sp</dimen>
+    <dimen name="size_layout_flag">250dp</dimen>
+
+    <dimen name="radius_toast">15dp</dimen>
+</resources>

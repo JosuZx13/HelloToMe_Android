@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ly_paint">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <pdm.hellotome.paint.PaintView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_blackboard"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:background="@drawable/ly_border_colors">
+
+
+        <RelativeLayout
+            android:id="@+id/blackboard_pencil_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/pencil_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_circle_black_color"
+                android:background="@drawable/ly_border_selected_item_blackboard"
+                android:contentDescription="@string/pencil_color_black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blackboard_pencil_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/pencil_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_circle_red_color"
+                android:contentDescription="@string/pencil_color_red" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blackboard_pencil_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/pencil_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_circle_blue_color"
+                android:contentDescription="@string/iv_descrip_pencil_color_blue" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/blackboard_pencil_rubber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/pencil_rubber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_eraser_variant"
+                android:contentDescription="@string/iv_descrip_rubber" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
